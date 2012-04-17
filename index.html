@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Query-builder by Lars</title>
+<link type="text/css" rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css"/>
+<link href='http://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/querybuilder.jquery.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</head>
+
+<body>
+	<div class="layout" id="top-section">
+    	<div class="layout content">
+        	<h1>Query-builder</h1>
+            <h2>testa querys mot (det inofficiella) REST API't för synonymer.se</h2>
+            <form id="query-form">
+            	<div class="module-output">
+                	<input id="query-output" class="output-field" placeholder="Välj parameterar nedan..." disabled="disabled" type="text"/>
+                	<input type="button" class="submit-button" value="Testa!" id="submit-btn"/>
+                </div>
+                 <div class="parameter text module-parameter-clean" id="api-key">
+                	<h4 class="header">API-nyckel? <span id="check">✗</span></h4>
+                    <input type="text" name="id"/>	
+                </div>
+                 <div class="parameter text module-parameter module-parameter-text">
+                	<h4 class="header">Ord att hitta synonmer för</h4>
+                    <div class="info">
+                    	<div class="icon"></div>
+                    	<div class="text"><p>Ange det ord som du vill hitta synonymer för. <br/> <br/>Exempel: <br/> Skriver du "Gå" får du tillbaka "Vandra", "Spatsera" ...</p></div>
+                    </div>
+                    <br/>
+                    <input type="text" name="word"/>	
+                </div>
+                
+                <div class="parameter checkbox module-parameter module-parameter-checkbox">
+                	<h4 class="header">Sortera</h4>
+                    <div class="info">
+                    	<div class="icon"></div>
+                    	<div class="text"><p>Ange om du vill sortera resultatet i alfabetisk ordning. <span class="default">Default: false</span> </p></div>
+                    </div>
+                    <input type="checkbox" name="sort"/>	
+                </div>
+                <div class="parameter checkbox module-parameter module-parameter-checkbox">
+                	<h4 class="header">Användarnas bidrag</h4>
+                    <div class="info">
+                    	<div class="icon"></div>
+                    	<div class="text"><p>Ange om du vill ha synonymer som har skickats in av användare av synonymer.se <span class="default">Default: false</span> </p></div>
+                    </div>
+                    <input type="checkbox" name="user_submited"/>
+                </div>
+                 <div class="parameter dropdown module-parameter module-parameter-dropdown">
+                	<h4 class="header">Data-format</h4>
+                    <div class="info">
+                    	<div class="icon"></div>
+                    	<div class="text"><p>Vilket format vill du ha på svaret? <span class="default">Default: json</span> </p></div>
+                    </div>
+                    <input type="checkbox" name="format"/>
+                    <select disabled="disabled">
+                        <option value="json">JSON</option>
+                        <option value="xml">XML</option>
+                    </select>
+                </div>
+                <div class="parameter dropdown module-parameter module-parameter-dropdown">
+                	<h4 class="header">Text-format</h4>
+                    <div class="info">
+                    	<div class="icon"></div>
+                    	<div class="text"><p>Hur ska synonymerna skrivas ut? Som GEMENER, versaler eller Normalt. <span class="default">Default: normal</span> </p></div>
+                    </div>
+                    <input type="checkbox" name="text_transform"/>
+                    <select disabled="disabled">
+                    	<option value="normal">Normal</option>
+                        <option value="uppercase">Versaler</option>
+                        <option value="lowercase">Gemener</option>
+                    </select>
+                </div>
+            </form>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="layout" id="bottom-section">
+    	<div class="layout content">
+        	<h3>Resultat:</h3>
+			<div id="data-viewer" class="module-data-viewer"><div id="bg-fader">...</div><pre>  </pre></div>´
+        </div>
+    </div>
+    <footer class="layout">
+    	<p>lars.c.magnusson[at]gmail[dot]com</p>
+    </footer>
+</body>
+</html>

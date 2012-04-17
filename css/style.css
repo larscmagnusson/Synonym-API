@@ -1,0 +1,284 @@
+/* Base */
+body
+{
+	color:#900;
+	font-family:"MS Serif", "New York", serif;
+	font-size:13px;
+}
+
+h1,h2,h3
+{
+	color:#333;
+	font-family:'Short Stack', cursive;
+	text-transform:uppercase;
+}
+
+h1
+{
+	font-size:50px;
+	letter-spacing:-8px;
+	text-align:center;
+}
+
+h1:first-letter
+{
+	font-size:80px;
+}
+
+h2
+{
+	color:#CCC;
+	font-size:15px;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+h4
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin-bottom:10px;
+}
+
+input[type=checkbox],input[type=text]
+{
+	clear:both;
+	display:block;
+}
+
+.layout#top-section
+{
+	padding-top:30px;
+}
+
+.layout#bottom-section
+{
+	margin-top:70px;
+}
+
+.layout.content
+{
+	margin:0 auto;
+	width:960px;
+}
+
+footer.layout
+{
+	margin-top:-10px;
+	text-align:center;
+}
+
+/* Moduler/Komponenter */
+.module-output .output-field
+{
+	background-image:0;
+	border-radius:5px 0 0 5px;
+	box-shadow:inset 0 0 7px #ccc;
+	float:left;
+	height:30px;
+	margin-bottom:10px;
+	margin-top:10px;
+	width:868px;
+}
+
+.module-output .output-field,.module-output .submit-button
+{
+	border:1px #999 solid;
+	font-size:15px;
+	letter-spacing:-1px;
+	margin:0;
+	padding:3px 10px;
+}
+
+.module-output .submit-button
+{
+	border-radius:0 5px 5px 0;
+	box-shadow:0 1px 5px 1px #F4F4F4;
+	float:right;
+	height:38px;
+	width:70px;
+}
+
+.module-parameter
+{
+	background:#F9F9F9;
+	border:1px #999 solid;
+	border-radius:5px;
+	float:left;
+	height:50px;
+	margin-right:25px;
+	padding:10px;
+}
+
+.module-parameter:last-child
+{
+	margin-right:0;
+}
+
+.module-parameter .header
+{
+	float:left;
+}
+
+.module-parameter input[type=checkbox]
+{
+	position:relative;
+	top:3px;
+}
+
+.module-parameter .info
+{
+	float:right;
+	position:relative;
+}
+
+.module-parameter .info .icon
+{
+	background:#666;
+	border-radius:10px;
+	color:white;
+	font-size:15px;
+	font-style:italic;
+	font-weight:bold;
+	height:15px;
+	left:10px;
+	margin-right:10px;
+	position:relative;
+	top:0;
+	width:15px;
+}
+
+.module-parameter .info .icon:after
+{
+	content:'i';
+	left:5px;
+	position:relative;
+}
+
+.module-parameter .info .icon:hover
+{
+	background:#999;
+}
+
+.module-parameter .info .text
+{
+	background:#fff;
+	border:#999 1px solid;
+	border-radius:5px;
+	color:#333;
+	display:none;
+	font-size:13px;
+	opacity:0.9;
+	padding:10px;
+	position:absolute;
+	top:20px;
+	width:150px;
+	z-index:99;
+}
+
+.module-parameter .info .text .default
+{
+	color:#999;
+	display:block;
+	margin-top:10px;
+}
+
+.module-parameter-text input
+{
+	padding:0;
+	width:100%;
+}
+
+.module-parameter-dropdown select
+{
+	float:left;
+	margin-left:10px;
+}
+
+.module-parameter-dropdown input[type=checkbox],.module-parameter-dropdown select
+{
+	margin:0;
+}
+
+.module-parameter-dropdown input[type=checkbox]
+{
+	float:left;
+	margin-right:10px;
+}
+
+.module-parameter-clean
+{
+	background:0;
+	border:none;
+	clear:both;
+	float:left;
+	height:30px;
+	margin:10px 0 0;
+	width:100%;
+}
+
+.module-parameter-clean h4
+{
+	text-decoration:underline;
+}
+
+.module-parameter-clean input[type=text]
+{
+	bottom:4px;
+	display:none;
+	margin-bottom:10px;
+	position:relative;
+}
+
+.module-data-viewer
+{
+	background:#F7F7F9 url(http://twitter.github.com/bootstrap/assets/img/grid-18px-masked.png) repeat-x;
+	border:1px #999 solid;
+	border-radius:5px;
+	color:#333;
+	font-family:Courier, monospace;
+	font-size:12px;
+	height:400px;
+	line-height:17px;
+	overflow:auto;
+	position:relative;
+	width:960px;
+}
+
+/* Misc */
+#bg-fader
+{
+	background:#fff;
+	display:none;
+	height:100%;
+	overflow:hidden;
+	position:absolute;
+	text-indent:-10000px;
+	width:100%;
+	z-index:99;
+}
+
+.clearfix:after
+{
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+}
+
+.clearfix
+{
+	display:inline-block;
+}
+
+html[xmlns] .clearfix
+{
+	display:block;
+}
+
+* html .clearfix
+{
+	height:1%;
+}
