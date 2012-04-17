@@ -3,7 +3,7 @@ API för www.synonymer.se
 Skicka in ett ord och få ut synonymer.
 T.ex. Gå = vandra, promenera, traska.
 
----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 Tja, jag heter Lars, är 24 år, kommer från fjällen och är webbutvecklare.
 Jag har byggt det här API't/Query-buildern för att kunna visa upp som ett komplement till mitt CV.
@@ -12,14 +12,14 @@ All kod är skriven av mig förutom simple html dom parser, jquery (no shit :P) 
 
 lars.c.magnusson@gmail.com
 
-----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 
 Observera! 
 
 API't är inofficellt och du behöver en API-nyckel för att använda det.
 Maila mig om du vill ha en, tanken är dock inte att någon egentligen ska använda det.
 
-----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 
 Koden inkluderar även:
 http://simplehtmldom.sourceforge.net/
